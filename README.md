@@ -43,3 +43,7 @@
   <li><b>Python sockets easily handle the implementation of the common transport protocols: TCP and UDP</b></li>
 </ul>
 
+<h3>Sockets</h3>
+<ul>
+  <li>Information passsed through sockets need to be coded with utf-8.</li>
+</ul>
