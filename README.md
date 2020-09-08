@@ -5,7 +5,6 @@
 <h3>Networking</h3>
 <ul>
   <li>Networking is a concept of communication between two entities/programms across the network:</li>
-    <br>
       - client to client <br>
       - client to server <br>
       - client to itself
