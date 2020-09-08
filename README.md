@@ -5,11 +5,10 @@
 <h3>Networking</h3>
 <ul>
   <li>Networking is a concept of communication between two entities/programms across the network:</li>
-      <ul>
-         <li>client to client</li>
-         <li>client to server</li>
-         <li>client to itself</li>
-      </ul>
+    <br>
+      - client to client <br>
+      - client to server <br>
+      - client to itself
   <li>Where client is an end device usually interfacing with a human.</li>
   <li>Server on the other hand is a device providing a service for a client</li>
 </ul>
