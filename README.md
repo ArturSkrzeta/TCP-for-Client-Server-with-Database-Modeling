@@ -39,6 +39,7 @@
 <ul>
   <li>Programming concept for establishing connection in bidirectional manner from program to program across the network.</li>
   <li>Once they are connected, we can use them to send data and receive data.</li>
+  <li>One socket: server.py, another socket: client.py</li>
   <li><b>Python sockets easily handle the implementation of the common transport protocols: TCP and UDP</b></li>
 </ul>
 
