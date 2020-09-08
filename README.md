@@ -12,7 +12,6 @@
   <li>Server on the other hand is a device providing a service for a client</li>
 </ul>
 
-
 <h3>Client - Server Model</h3>
 <ul>
   <li>Server can run constantly and be available for clients to connect to at any time to receive the information clients require.</li>
@@ -20,12 +19,22 @@
   <li>All computers connected to a network should have IP address: 127.0.0.1</li>
   <li>Port number - slots for network card. Ports reroute the incoming data to appropriate program.</li>
 </ul>
+
 <h3>Peer-to-Peer model</h3>
 <ul>
   <li>Server with services don't have to be constantluy available.</li>
   <li>Clients connect to other clients with no central server.</li>
   <li>Example: Skype or games servers.</li>
 </ul>
+
+<h3>TCP</h3>
+<ul>
+  <li>Reliable part within the protocol ensures if the data is lost on its course through the network, the prtocol will reorganize the data to be resent</li>
+  <li>It alos checks if the data is courrpted and arrives in ordered manner.</li>
+  <li>The checking slows down the protocol.</li>
+  <li>Applied everywhere when we need to be 100% sure the data is being completely delivered: Web Browsers, Emails, FTP...</li>
+</ul>
+
 <h3>Sockets</h3>
 <ul>
   <li>Programming concept for establishing connection in bidirectional manner from program to program across the network.</li>
