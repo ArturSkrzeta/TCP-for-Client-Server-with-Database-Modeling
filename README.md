@@ -45,5 +45,5 @@
 
 <h3>Insights</h3>
 <ul>
-  <li>Information passsed through sockets need to be coded with utf-8.</li>
+  <li>Information passsed through sockets needs to be encoded with utf-8.</li>
 </ul>
