@@ -1,4 +1,4 @@
-<h2>TCP for Client Server Modeling</h2>
+<h2>TCP for Client Server + Database Modeling</h2>
 <p>TCP is the common transport protocol that ensures reliable exchange of data betwen connected programms accross the network.</p>
 <p>In the repo, I medel the connection: client - server. Data exchange between client and server will be performed with TCP.</p>
 
