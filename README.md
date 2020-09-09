@@ -1,7 +1,7 @@
 <h2>TCP for Client Server + Database Modeling</h2>
 <p>TCP is the common transport protocol that ensures reliable exchange of data betwen connected programms accross the network.</p>
 <p>In the repo, I medel the connection: client - server - database. Data exchange between client and server will be performed with TCP. Server saves client's data in the databse.</p>
-<img src="tcp.gif">
+<img src="images/tcp.gif">
 <h3>Networking</h3>
 <ul>
   <li>Networking is a concept of communication between two entities/programms across the network:</li>
