@@ -2,7 +2,7 @@ import socket
 from uuid import uuid4
 from datetime import datetime
 
-HOST = '57.20.206.19'
+HOST = '127.0.0.1'
 PORT = 33000
 BUFFER = 1024
 now = datetime.now()

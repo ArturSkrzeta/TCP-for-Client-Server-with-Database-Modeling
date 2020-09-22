@@ -1,14 +1,14 @@
 import socket
 import sqlite3
 
-HOST = '57.20.206.19'
+HOST = '127.0.0.1'
 PORT = 33000
 BUFFER = 1024
 msg = 'Welcome on server!'
 
 def establish_db():
     global conn
-    conn = sqlite3.connect('data.db')
+    conn = sqlite3.connect('xxxx.db')
     global c
     c = conn.cursor()
     try:
@@ -48,7 +48,7 @@ def main():
 
         date = client_socket.recv(BUFFER).decode('utf8')
         print(f'The connection from {address} has been established on {date}.')
-    
+
         msg_to_client =  msg.encode('utf8')
         client_socket.send(msg_to_client)
 
