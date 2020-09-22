@@ -47,3 +47,31 @@
 <ul>
   <li>Information passsed through sockets needs to be encoded with utf-8.</li>
 </ul>
+
+<h3>SQLite database setup</h3>
+<ol>
+  <li>Creating a file in project folder: db_name.db.</li>
+  <li>Importing sqlite3 in Python script:
+    <br>
+     - import sqlite3
+  </li>
+  <li>Conneting to db:
+    <br>
+     - conn = sqlite3.connect('db_name.db')<br>
+     - c = conn.cursor()<br>
+  </li>
+  <li> Creating table:
+    <br>
+      - c.execute('CREATE TABLE tblTransactions(id INTEGER PRIMARY KEY AUTOINCREMENT, value TEXT)')
+  </li>
+  <li> Inserting values:
+    <br>
+     - c.execute("INSERT INTO tblTransactions VALUES(NULL, '" + row + "')")<br>
+     - conn.commit()<br>
+  </li>
+  <li>Closing db:
+    <br>
+    - c.close()<br>
+    - conn.close()<br>
+  </li>
+</ol>
