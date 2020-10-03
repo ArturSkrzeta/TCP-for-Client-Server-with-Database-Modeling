@@ -1,0 +1,172 @@
+	<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Portfolio Artur Skrzeta</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><a href="https://arturskrzeta.github.io/"><img src="images/avatar.png" alt="" style="margin-bottom:0px"/></a></span>
+					<h1 id="logo"><a href="https://arturskrzeta.github.io/">Artur Skrzeta</a></h1>
+					<p>Data Analyst<br />
+					+4 years experience</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#one" class="active">Intro</a></li>
+						<li><a href="#two">Features</a></li>
+						<li><a href="#three">Demo</a></li>
+						<li><a href="#four">Setup</a></li>
+						<li><a href="#five">Source Code</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/artur-skrz%C4%99ta-010b23187/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://www.instagram.com/arturskrrr/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://github.com/ArturSkrzeta" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="mailto: arturskrzeta@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="container">
+									<header class="major">
+										<h2>TCP for Client->Server+Database Modeling</h2>
+
+										<h3>Intro</h3>
+
+										<p>Networking</p>
+										<ul>
+										  <li>Networking is a concept of communication between two entities/programms across the network:</li>
+										      - client to client <br>
+										      - client to server <br>
+										      - client to itself
+										  <li>Where client is an end device usually interfacing with a human.</li>
+										  <li>Server on the other hand is a device providing a service for a client</li>
+										</ul>
+
+										<p>TCP:</p>
+										<ul>
+										  <li>Reliable part within the protocol ensures if the data is lost on its course through the network, the prtocol will reorganize the data to be resent</li>
+										  <li>It also checks if the data is courrpted and arrives in ordered manner.</li>
+										  <li>The checking slows down the protocol.</li>
+										  <li>Applied everywhere when we need to be 100% sure the data is being completely delivered: Web Browsers, Emails, FTP...</li>
+										</ul>
+									</header>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two">
+								<div class="container">
+									<h3>Features</h3>
+									<p>App includes following features:</p>
+									<ul class="feature-icons">
+										<li class="icon solid fa-check">TCP</li>
+										<li class="icon solid fa-check">Database</li>
+									</ul>
+								</div>
+							</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="container">
+									<h3>Demo</h3>
+									<p>Client - Server Model<p>
+									<ul>
+									  <li>Server can run constantly and be available for clients to connect to at any time to receive the information clients require.</li>
+									  <li>Example: web browser as a client conncts Google as a server.</li>
+									  <li>All computers connected to a network should have IP address: 127.0.0.1</li>
+									  <li>Port number - slots for network card. Ports reroute the incoming data to appropriate program.</li>
+									</ul>
+									<img src="images/tcp.gif" width="780">
+									<p>Sockets</p>
+									<ul>
+									  <li>Programming concept for establishing connection in bidirectional manner from program to program across the network.</li>
+									  <li>Once they are connected, we can use them to send data and receive data.</li>
+									  <li>One socket: server.py, another socket: client.py.</li>
+									  <li><b>Python sockets easily handle the implementation of the common transport protocols: TCP and UDP</b></li>
+									</ul>
+								</div>
+							</section>
+
+
+						<!-- Four -->
+							<section id="four">
+								<div class="container">
+									<h3>Setup</h3>
+									<p>SQLite database setup:</p>
+									<ol>
+									  <li>Creating a file in project folder: db_name.db.</li>
+									  <li>Importing sqlite3 in Python script:
+									    <br>
+									    > import sqlite3
+									  </li>
+									  <li>Conneting to db:
+									    <br>
+									    > conn = sqlite3.connect('db_name.db')<br>
+									    > c = conn.cursor()<br>
+									  </li>
+									  <li> Creating table:
+									    <br>
+									    > c.execute('CREATE TABLE tblTransactions(id INTEGER PRIMARY KEY AUTOINCREMENT, value TEXT)')
+									  </li>
+									  <li> Inserting values:
+									    <br>
+									    > c.execute("INSERT INTO tblTransactions VALUES(NULL, '" + row + "')")<br>
+									    > conn.commit()<br>
+									  </li>
+									  <li>Closing db:
+									    <br>
+									    > c.close()<br>
+									    > conn.close()<br>
+									  </li>
+									</ol>
+								</div>
+							</section>
+
+							<section id="five">
+								<div class="container">
+									<h3>Source Code</h3>
+									<p>You can view the source code: <a href="https://github.com/ArturSkrzeta/TCP-for-Client-Server-with-Database-Modeling/tree/master/files">HERE</a></p>
+									<p>&nbsp</p>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<a href="https://arturskrzeta.github.io/" style="padding-bottom:10px;">Back to Portfolio</a>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
