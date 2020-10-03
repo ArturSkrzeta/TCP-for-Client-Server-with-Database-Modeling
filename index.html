@@ -50,7 +50,7 @@
 
 										<h3>Intro</h3>
 
-										<p>Networking</p>
+										<p>Networking:</p>
 										<ul>
 										  <li>Networking is a concept of communication between two entities/programms across the network:</li>
 										      - client to client <br>
@@ -87,21 +87,33 @@
 							<section id="three">
 								<div class="container">
 									<h3>Demo</h3>
-									<p>Client - Server Model<p>
+
+									<p>Client - Server Model:<p>
 									<ul>
 									  <li>Server can run constantly and be available for clients to connect to at any time to receive the information clients require.</li>
 									  <li>Example: web browser as a client conncts Google as a server.</li>
-									  <li>All computers connected to a network should have IP address: 127.0.0.1</li>
 									  <li>Port number - slots for network card. Ports reroute the incoming data to appropriate program.</li>
 									</ul>
-									<img src="images/tcp.gif" width="780">
-									<p>Sockets</p>
+
+									<p>Sockets:</p>
 									<ul>
-									  <li>Programming concept for establishing connection in bidirectional manner from program to program across the network.</li>
-									  <li>Once they are connected, we can use them to send data and receive data.</li>
-									  <li>One socket: server.py, another socket: client.py.</li>
-									  <li><b>Python sockets easily handle the implementation of the common transport protocols: TCP and UDP</b></li>
+										<li>Programming concept for establishing connection in bidirectional manner from program to program across the network.</li>
+										<li>Once they are connected, we can use them to send data and receive data.</li>
+										<li>One socket: server.py, another socket: client.py.</li>
+										<li><b>Python sockets easily handle the implementation of the common transport protocols: TCP and UDP</b></li>
 									</ul>
+
+									<img src="images/tcp.gif" width="780">
+
+									<p>Cases study:</p>
+									<ol>
+										<li>Client.py connects to Server which is contantly listening for a connecton.</li>
+										<li>Serve is run from serve.py.</li>
+										<li>Client.py, once connected to Server, generates 10 random 'transactions'.</li>
+										<li>Server confirms reception of 'transactions' batch. </li>
+										<li>Server saves received data into db and continue to listening afterwards.</li>
+									</ol>
+
 								</div>
 							</section>
 
