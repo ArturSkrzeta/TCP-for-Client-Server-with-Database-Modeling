@@ -30,7 +30,7 @@
 <h3>TCP</h3>
 <ul>
   <li>Reliable part within the protocol ensures if the data is lost on its course through the network, the prtocol will reorganize the data to be resent</li>
-  <li>It alos checks if the data is courrpted and arrives in ordered manner.</li>
+  <li>It also checks if the data is courrpted and arrives in ordered manner.</li>
   <li>The checking slows down the protocol.</li>
   <li>Applied everywhere when we need to be 100% sure the data is being completely delivered: Web Browsers, Emails, FTP...</li>
 </ul>
