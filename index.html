@@ -129,26 +129,26 @@
 									  <li>Creating a file in project folder: db_name.db.</li>
 									  <li>Importing sqlite3 in Python script:
 									    <br>
-									    > import sqlite3
+									    <code>import sqlite3</code>
 									  </li>
 									  <li>Conneting to db:
 									    <br>
-									    > conn = sqlite3.connect('db_name.db')<br>
-									    > c = conn.cursor()<br>
+									    <code>conn = sqlite3.connect('db_name.db')</code><br>
+									    <code>c = conn.cursor()</code>
 									  </li>
 									  <li> Creating table:
 									    <br>
-									    > c.execute('CREATE TABLE tblTransactions(id INTEGER PRIMARY KEY AUTOINCREMENT, value TEXT)')
+									    <code>c.execute('CREATE TABLE tblTransactions(id INTEGER PRIMARY KEY AUTOINCREMENT, value TEXT)')</code>
 									  </li>
 									  <li> Inserting values:
 									    <br>
-									    > c.execute("INSERT INTO tblTransactions VALUES(NULL, '" + row + "')")<br>
-									    > conn.commit()<br>
+									    <code>c.execute("INSERT INTO tblTransactions VALUES(NULL, '" + row + "')")</code><br>
+									    <code>conn.commit()</code>
 									  </li>
 									  <li>Closing db:
 									    <br>
-									    > c.close()<br>
-									    > conn.close()<br>
+									    <code>c.close()</code><br>
+									    <code>conn.close()</code>
 									  </li>
 									</ol>
 								</div>
