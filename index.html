@@ -46,11 +46,9 @@
 							<section id="one">
 								<div class="container">
 									<header class="major">
-										<h2>TCP for Client -> Server + Database Modeling</h2>
-
+										<h2>Client-Server Data Exchange with TCP</h2>
 										<h3>Intro</h3>
-
-										<p>Networking:</p>
+										<h5>Networking:</h5>
 										<ul>
 										  <li>Networking is a concept of communication between two entities/programms across the network:
 													<br>
@@ -62,11 +60,11 @@
 										  <li>Server on the other hand is a device providing a service for a client</li>
 										</ul>
 
-										<p>TCP:</p>
+										<h5>TCP:</h5>
 										<ul>
 										  <li>Reliable part within the protocol ensures if the data is lost on its course through the network, the prtocol will reorganize the data to be resent</li>
 										  <li>It also checks if the data is courrpted and arrives in ordered manner.</li>
-										  <li>The checking slows down the protocol.</li>
+										  <li>However, the checking slows down the protocol.</li>
 										  <li>Applied everywhere when we need to be 100% sure the data is being completely delivered: Web Browsers, Emails, FTP...</li>
 										</ul>
 									</header>
@@ -90,14 +88,14 @@
 								<div class="container">
 									<h3>Demo</h3>
 
-									<p>Client - Server Model:<p>
+									<h5>Client - Server Model:<h5>
 									<ul>
 									  <li>Server can run constantly and be available for clients to connect to at any time to receive the information clients require.</li>
 									  <li>Example: web browser as a client conncts Google as a server.</li>
 									  <li>Port number - slots for network card. Ports reroute the incoming data to appropriate program.</li>
 									</ul>
 
-									<p>Sockets:</p>
+									<h5>Sockets:</h5>
 									<ul>
 										<li>Programming concept for establishing connection in bidirectional manner from program to program across the network.</li>
 										<li>Once they are connected, we can use them to send data and receive data.</li>
@@ -107,7 +105,7 @@
 
 									<img src="images/tcp.gif" width="780">
 
-									<p>Cases study:</p>
+									<h5>Cases study:</h5>
 									<ol>
 										<li>Client.py connects to Server which is contantly listening for a connecton.</li>
 										<li>Server is run from server.py.</li>
